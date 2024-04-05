@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="search-wrapper">
+            <label for="Search">Search Users</label>
+            <input type="text" id="search" placeholder="Search Here!"> <!--Make the id match the for above-->
+        </div>
+        <div class="cards-container">
+            <template data-user-template> <!--doesnt have any html show on the page but allows js to make it on the page-->
+                <div class="card">
+                    <div class="header" data-header>Person Name</div>
+                    <div class="body" data-body>email@email.com</div>
+                </div>
+            </template>
+        </div>
+
+
+        <script src="index.js" async defer></script>
+    </body>
+</html>
